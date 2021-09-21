@@ -1,0 +1,63 @@
+.sideBar-wrapp {
+	width: 212px;
+	height: 900px;
+	border-right: 1px solid #dadada;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: left;
+	padding: 0 0 25px 25px;
+}
+
+.sideBar-wrapp .logo-img {
+	position: relative;
+	width: 40px;
+	height: 25px;
+	left: 33px;
+	top: 40px;
+}
+
+nav {
+	display: flex;
+	flex-flow: column nowrap;
+	margin-top: 110px;
+}
+nav a {
+	margin: 0 0 36px 0;
+	display: flex;
+	flex-flow: row nowrap;
+    align-items: center;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.374px;
+	text-decoration: none;
+}
+
+nav a > img {
+	margin-right: 12px;
+}
+
+nav a:focus {
+	color: red;
+	margin-left: 12px;
+	font-weight: 600;
+}
+
+.profileNav {
+	margin-top: 485px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.profileNav img {
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+}
+
+.profileNav a {
+    font-size: 18px;
+    line-height: 41px;
+    letter-spacing: 0.374px;
+    text-decoration: none;
+}

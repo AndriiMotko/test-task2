@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.app-wrapp {
+	width: 1440px;
+	margin: 0 auto;
+	background: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-flow: row nowrap;
+}
