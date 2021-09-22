@@ -1,33 +1,56 @@
-import EUR from "../../assets/icons/EURO.png";
-import GBP from "../../assets/icons/GBP.png";
-import USD from "../../assets/icons/USD.png";
-import KRW from "../../assets/icons/KRW.png"
-
+import "./accounts.css";
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	NavLink,
+	Link,
+} from "react-router-dom";
 
 export default function Accounts() {
-    return (
-        <div className="acccounts">
-            <h2>Your accounts</h2>
-            <div className="account">
-                <img src={EUR} alt="Euro (EUR)" />
-                <p>Euro (EUR)</p>
-                <span>$451.00</span>
-            </div>
-            <div className="account">
-                <img src={GBP} alt="British Sterling (GBP)" />
-                <p>British Sterling (GBP)</p>
-                <span>£10.00</span>
-            </div>
-            <div className="account">
-                <img src={USD} alt="US Dollar (USD)" />
-                <p>US Dollar (USD)</p>
-                <span>$10234.20</span>
-            </div>
-            <div className="account">
-                <img src={KRW} alt="South Korea Won (KRW)" />
-                <p>South Korea Won (KRW)</p>
-                <span>₩0.00</span>
-            </div>
-        </div>
-    );
+	return (
+		<Router>
+			<div className="acccounts">
+				<h2>Your accounts</h2>
+
+				<Link to="#" className="account">
+						<div className="currency-icon euro">
+							<span>€</span>
+						</div>
+						<p>Euro (EUR)</p>
+						<span>€451.00</span>
+				</Link>
+				<Link to="#" className="account">
+					
+						<div className="currency-icon gbp">
+							<span>£</span>
+						</div>
+						<p>British Sterling (GBP)</p>
+						<span>£10.00</span>
+					
+				</Link>
+				<Link to="#" className="account">
+					
+						<div className="currency-icon usd">
+							<span>$</span>
+						</div>
+						<p>US Dollar (USD)</p>
+						<span>$10234.20</span>
+					
+				</Link>
+				<Link to="#" className="account">
+					
+						<div className="currency-icon krw">
+							<span>₩</span>
+						</div>
+						<p>South Korea Won (KRW)</p>
+						<span>₩0.00</span>
+					
+				</Link>
+			</div>
+            <Switch>
+				<Route></Route>
+			</Switch>
+		</Router>
+	);
 }

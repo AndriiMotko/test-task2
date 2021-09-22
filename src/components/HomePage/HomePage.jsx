@@ -1,7 +1,11 @@
 import Accounts from "../Accounts/Accounts";
+import RequestSection from "../RequestSection/RequestSection";
 
 export default function HomePage() {
-    return (
-        <Accounts />
-    );
+	return (
+		<div className="homepage">
+			<Accounts />
+			<RequestSection />
+		</div>
+	);
 }

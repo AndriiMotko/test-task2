@@ -1,1 +1,81 @@
-acccounts
+.acccounts {
+	width: 537px;
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 49px 27px 236px 33px;
+	letter-spacing: 0.374px;
+}
+
+.acccounts h2 {
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+
+.account {
+	width: 448px;
+	background: #ffffff;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+	border-radius: 20px;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	padding: 20px;
+	margin-bottom: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.account > span {
+	margin-left: auto;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.currency-icon {
+	border-radius: 50%;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	margin-right: 7px;
+}
+
+.currency-icon span {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	color: #ffffff;
+}
+
+.euro {
+	background-color: #42507f;
+}
+
+.gbp {
+	background-color: #427f7a;
+}
+
+.usd {
+	background-color: #f5855c;
+}
+
+.krw {
+	background-color: #ffac30;
+}
+
+.account p {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.account:focus {
+    color: #FFFFFF;
+	background: linear-gradient(180deg, #fd3a6c 0%, #f5855c 100%);
+	box-shadow: 0px 0px 7px #ee4874;
+    margin-left: 30px;
+}
