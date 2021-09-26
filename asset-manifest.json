@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/test-task2/static/css/main.b86e6a06.chunk.css",
+    "main.js": "/test-task2/static/js/main.8c9b1acf.chunk.js",
+    "main.js.map": "/test-task2/static/js/main.8c9b1acf.chunk.js.map",
+    "runtime-main.js": "/test-task2/static/js/runtime-main.2813e629.js",
+    "runtime-main.js.map": "/test-task2/static/js/runtime-main.2813e629.js.map",
+    "static/js/2.d1e49b3b.chunk.js": "/test-task2/static/js/2.d1e49b3b.chunk.js",
+    "static/js/2.d1e49b3b.chunk.js.map": "/test-task2/static/js/2.d1e49b3b.chunk.js.map",
+    "index.html": "/test-task2/index.html",
+    "static/css/main.b86e6a06.chunk.css.map": "/test-task2/static/css/main.b86e6a06.chunk.css.map",
+    "static/js/2.d1e49b3b.chunk.js.LICENSE.txt": "/test-task2/static/js/2.d1e49b3b.chunk.js.LICENSE.txt",
+    "static/media/account_icon.666cf4f3.svg": "/test-task2/static/media/account_icon.666cf4f3.svg",
+    "static/media/add_card_icon.6c397697.svg": "/test-task2/static/media/add_card_icon.6c397697.svg",
+    "static/media/card.28764bbf.svg": "/test-task2/static/media/card.28764bbf.svg",
+    "static/media/check_icon.bd01cd24.svg": "/test-task2/static/media/check_icon.bd01cd24.svg",
+    "static/media/earn_icon.62e3857f.svg": "/test-task2/static/media/earn_icon.62e3857f.svg",
+    "static/media/go_to.013576ee.svg": "/test-task2/static/media/go_to.013576ee.svg",
+    "static/media/home_icon.d4c19b5c.svg": "/test-task2/static/media/home_icon.d4c19b5c.svg",
+    "static/media/leo.5e67b9a7.png": "/test-task2/static/media/leo.5e67b9a7.png",
+    "static/media/logo.a0d37c2e.svg": "/test-task2/static/media/logo.a0d37c2e.svg",
+    "static/media/money_icon.8aeb77fb.svg": "/test-task2/static/media/money_icon.8aeb77fb.svg",
+    "static/media/monica.63b5fbc1.png": "/test-task2/static/media/monica.63b5fbc1.png",
+    "static/media/more_profile_icon.c57aa331.svg": "/test-task2/static/media/more_profile_icon.c57aa331.svg",
+    "static/media/piggy-bank_icon.b0bd6598.svg": "/test-task2/static/media/piggy-bank_icon.b0bd6598.svg",
+    "static/media/profile1.5509edc3.png": "/test-task2/static/media/profile1.5509edc3.png",
+    "static/media/profile2.298baabf.png": "/test-task2/static/media/profile2.298baabf.png",
+    "static/media/profile3.9c5cedc6.png": "/test-task2/static/media/profile3.9c5cedc6.png",
+    "static/media/profile_img.25febaee.png": "/test-task2/static/media/profile_img.25febaee.png",
+    "static/media/send_icon.dd72ba64.svg": "/test-task2/static/media/send_icon.dd72ba64.svg",
+    "static/media/send_money_icon.c270ba88.svg": "/test-task2/static/media/send_money_icon.c270ba88.svg",
+    "static/media/top_icon.db84785c.svg": "/test-task2/static/media/top_icon.db84785c.svg",
+    "static/media/top_up_icon.166f5225.svg": "/test-task2/static/media/top_up_icon.166f5225.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2813e629.js",
+    "static/js/2.d1e49b3b.chunk.js",
+    "static/css/main.b86e6a06.chunk.css",
+    "static/js/main.8c9b1acf.chunk.js"
+  ]
+}
