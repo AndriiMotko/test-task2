@@ -20,6 +20,9 @@
 }
 
 .send-money-form {
+	position: absolute;
+	left: 750px;
+	top: 390px;
 	width: 630px;
 	display: flex;
 	flex-flow: row nowrap;

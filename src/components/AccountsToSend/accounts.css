@@ -1,7 +1,4 @@
 .acccounts {
-	position: absolute;
-	left: 212px;
-	top: 100px;
 	width: 537px;
 	box-sizing: border-box;
 	display: flex;
@@ -21,8 +18,8 @@
 	align-items: center;
 	padding: 20px;
 	margin-bottom: 20px;
-	text-decoration: none;
-	color: #000000;
+    text-decoration: none;
+    color: #000000;
 }
 
 .account > span {
@@ -73,8 +70,8 @@
 }
 
 .acccounts .active {
-	color: #ffffff;
+    color: #FFFFFF;
 	background: linear-gradient(180deg, #fd3a6c 0%, #f5855c 100%);
 	box-shadow: 0px 0px 7px #ee4874;
-	margin-left: 30px;
+    margin-left: 30px;
 }

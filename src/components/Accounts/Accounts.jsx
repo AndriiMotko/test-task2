@@ -4,14 +4,40 @@ import {
 	Switch,
 	Route,
 	NavLink,
-	Redirect,
 } from "react-router-dom";
+import { useEffect, useState } from "react";
+import axios from "axios";
 import Account from "../Account/Account";
-import RequestSection from "../RequestSection/RequestSection";
 
-export default function Accounts(data) {
+const URL = "https://vhmfz744o2.execute-api.eu-west-2.amazonaws.com/dev/data";
+
+export default function Accounts() {
+	const [data, setData] = useState();
+	const [isLoading, setLoading] = useState(true);
+
+	useEffect(() => {
+		const fetchData = async () => {
+			try {
+				const response = await axios.get(URL, {
+					headers: {
+						"x-api-key": "ieLWvByj0Z7obl0aLmVzmiJgbjVXZf987aoRts59",
+					},
+				});
+				setData(response.data.body.accounts);
+				setLoading(false);
+			} catch (error) {
+				console.log(error);
+			}
+		};
+		fetchData();
+	}, []);
+
+	if (isLoading) {
+		return <div className="App">Loading...</div>;
+	}
+
 	return (
-		<Router>
+		<Router basename="/test-task2">
 			<div className="acccounts">
 				<NavLink to="/eur" className="account" activeClassName="active">
 					<div className="currency-icon euro">
@@ -42,7 +68,7 @@ export default function Accounts(data) {
 					<span>{`₩${data["3"].balance.toFixed(2)}`}</span>
 				</NavLink>
 			</div>
-			<RequestSection />
+
 			<Switch>
 				<Route path="/eur" exact>
 					<Account {...data["0"]} />
@@ -56,9 +82,6 @@ export default function Accounts(data) {
 				<Route path="/krw">
 					<Account {...data["3"]} />
 				</Route>
-				<Redirect to="/eur">
-					<Account {...data["0"]} />
-				</Redirect>
 			</Switch>
 		</Router>
 	);

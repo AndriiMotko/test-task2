@@ -1,4 +1,7 @@
 .request-wrapp {
+	position: absolute;
+	left: 212px;
+	top: 660px;
 	width: 537px;
 	box-sizing: border-box;
 	border: 1px solid #dadada;

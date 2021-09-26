@@ -8,6 +8,7 @@
 }
 
 .page-title {
+	position: absolute;
 	font-size: 20px;
 	line-height: 30px;
 	margin: 50px 0 20px 33px;

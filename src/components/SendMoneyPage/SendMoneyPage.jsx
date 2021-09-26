@@ -1,10 +1,10 @@
-import AccountsToSend from "../AccountsToSend/AccountsToSend";
+import Accounts from "../Accounts/Accounts";
 import "./sendMoneyPage.css";
 
 import card from "../../assets/icons/card.svg";
 import sendRedIcon from "../../assets/icons/send_money_icon.svg";
 
-export default function SendMoneyPage(data) {
+export default function SendMoneyPage() {
 	return (
 		<div className="send-money-page">
 			<div>
@@ -12,7 +12,7 @@ export default function SendMoneyPage(data) {
 					<img src={card} alt="card" />
 					<h2>Send Money From:</h2>
 				</div>
-				{data && <AccountsToSend {...data} />}
+				<Accounts />
 			</div>
 			<div className="send-money-form">
 				<img src={sendRedIcon} alt="send" />

@@ -1,4 +1,7 @@
 .account-wrapp {
+	position: absolute;
+	left: 750px;
+	top: 0px;
 	width: 691px;
 	box-sizing: border-box;
 	background-color: #ffffff;

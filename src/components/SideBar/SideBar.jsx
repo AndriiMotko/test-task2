@@ -6,8 +6,6 @@ import {
 	NavLink,
 	Link,
 } from "react-router-dom";
-import { useEffect, useState } from "react";
-import axios from "axios";
 import logo from "../../assets/icons/logo.svg";
 import homeIcon from "../../assets/icons/home_icon.svg";
 import sendIcon from "../../assets/icons/send_icon.svg";
@@ -17,33 +15,13 @@ import profileImg from "../../assets/img/profile_img.png";
 import HomePage from "../HomePage/HomePage";
 import SendMoneyPage from "../SendMoneyPage/SendMoneyPage";
 
-const URL = "https://vhmfz744o2.execute-api.eu-west-2.amazonaws.com/dev/data";
-
 export default function SideBar() {
-	const [data, setData] = useState();
-
-	useEffect(() => {
-		const fetchData = async () => {
-			try {
-				const response = await axios.get(URL, {
-					headers: {
-						"x-api-key": "ieLWvByj0Z7obl0aLmVzmiJgbjVXZf987aoRts59",
-					},
-				});
-				setData(response.data.body.accounts);
-			} catch (error) {
-				console.log(error);
-			}
-		};
-		fetchData();
-	}, []);
-
 	return (
-		<Router>
+		<Router basename="/test-task2">
 			<div className="sideBar-wrapp">
 				<img className="logo-img" src={logo} alt="Logo" />
 				<nav>
-					<NavLink to="" exact activeClassName="selected">
+					<NavLink to="/" exact activeClassName="selected">
 						<img src={homeIcon} alt="Home" />
 						Home
 					</NavLink>
@@ -66,9 +44,11 @@ export default function SideBar() {
 				</div>
 			</div>
 			<Switch>
-				<Route path="/send-money">{data && <SendMoneyPage {...data} />}</Route>
-				<Route path="" exact>
-					{data && <HomePage {...data} />}
+				<Route path="/send-money">
+					<SendMoneyPage />
+				</Route>
+				<Route path="/" exact>
+					<HomePage />
 				</Route>
 			</Switch>
 		</Router>

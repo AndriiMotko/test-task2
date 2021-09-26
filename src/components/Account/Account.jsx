@@ -28,7 +28,7 @@ export default function Account(data) {
 	const currencySumbol = getCurrency();
 
 	return (
-		<Router>
+		<Router basename="/test-task2">
 			<div className="account-wrapp">
 				<p>Balance</p>
 				<div className="balance-wrapp">
@@ -40,7 +40,7 @@ export default function Account(data) {
 				</div>
 				<p>Quick Transaction</p>
 				<div className="quick-transition-wrapp">
-					<a className="send-money" href="/send-money">
+					<a className="send-money" href="/test-task2/send-money">
 						<img src={sendMoneyIcon} alt="send money" />
 						<span>Send Money</span>
 					</a>
