@@ -1,6 +1,14 @@
 .homepage {
-    display: flex;
-    flex-flow: column wrap;
-    
+	width: 1228px;
+	max-height: 900px;
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: column wrap;
+	box-sizing: border-box;
+}
 
+.page-title {
+	font-size: 20px;
+	line-height: 30px;
+	margin: 50px 0 20px 33px;
 }

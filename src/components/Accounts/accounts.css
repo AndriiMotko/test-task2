@@ -1,19 +1,15 @@
 .acccounts {
 	width: 537px;
+	box-sizing: border-box;
 	display: flex;
 	flex-flow: column nowrap;
-	padding: 49px 27px 236px 33px;
+	padding: 0 27px 200px 33px;
 	letter-spacing: 0.374px;
-}
-
-.acccounts h2 {
-	font-size: 20px;
-	line-height: 30px;
-	margin-bottom: 20px;
 }
 
 .account {
 	width: 448px;
+	box-sizing: border-box;
 	background: #ffffff;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 	border-radius: 20px;
@@ -22,8 +18,8 @@
 	align-items: center;
 	padding: 20px;
 	margin-bottom: 20px;
-    text-decoration: none;
-    color: #000000;
+	text-decoration: none;
+	color: #000000;
 }
 
 .account > span {
@@ -73,9 +69,9 @@
 	line-height: 22px;
 }
 
-.account:focus {
-    color: #FFFFFF;
+.acccounts .active {
+	color: #ffffff;
 	background: linear-gradient(180deg, #fd3a6c 0%, #f5855c 100%);
 	box-shadow: 0px 0px 7px #ee4874;
-    margin-left: 30px;
+	margin-left: 30px;
 }

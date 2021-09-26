@@ -1,15 +1,7 @@
-import "./accounts.css";
-import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
-	NavLink,
-	Redirect,
-} from "react-router-dom";
-import Account from "../Account/Account";
-import RequestSection from "../RequestSection/RequestSection";
+import "../Accounts/accounts.css";
+import { BrowserRouter as Router, NavLink } from "react-router-dom";
 
-export default function Accounts(data) {
+export default function AccountsToSend(data) {
 	return (
 		<Router>
 			<div className="acccounts">
@@ -42,24 +34,6 @@ export default function Accounts(data) {
 					<span>{`₩${data["3"].balance.toFixed(2)}`}</span>
 				</NavLink>
 			</div>
-			<RequestSection />
-			<Switch>
-				<Route path="/eur" exact>
-					<Account {...data["0"]} />
-				</Route>
-				<Route path="/gbp">
-					<Account {...data["1"]} />
-				</Route>
-				<Route path="/usd">
-					<Account {...data["2"]} />
-				</Route>
-				<Route path="/krw">
-					<Account {...data["3"]} />
-				</Route>
-				<Redirect to="/eur">
-					<Account {...data["0"]} />
-				</Redirect>
-			</Switch>
 		</Router>
 	);
 }

@@ -1,4 +1,6 @@
 .request-wrapp {
+	width: 537px;
+	box-sizing: border-box;
 	border: 1px solid #dadada;
 	border-bottom: none;
 	border-radius: 40px 0px 0px 0px;
@@ -9,39 +11,38 @@
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
-    margin-bottom: 35px;
+	margin-bottom: 35px;
 }
 
 .request-card:last-child {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .request-card img:first-child {
 	margin-right: 16px;
-    width: 32px;
-    height: 32px;
+	width: 32px;
+	height: 32px;
 }
 
 .request-card img:last-child {
-    width: 16px;
-    height: 16px;
+	width: 16px;
+	height: 16px;
 }
 
 .request-card > a {
-    margin-left: auto;
+	margin-left: auto;
 }
 
 .request-card h2 {
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 30px;
-    margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .request-card span {
-    font-family: "Roboto", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 14px;
 	line-height: 16px;
 	color: #797979;
 }
-

@@ -1,11 +1,11 @@
+import "./homepage.css";
 import Accounts from "../Accounts/Accounts";
-import RequestSection from "../RequestSection/RequestSection";
 
-export default function HomePage() {
+export default function HomePage(data) {
 	return (
 		<div className="homepage">
-			<Accounts />
-			<RequestSection />
+			<h2 className="page-title">Your accounts</h2>
+			{data && <Accounts {...data} />}
 		</div>
 	);
 }
